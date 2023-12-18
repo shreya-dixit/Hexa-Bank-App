@@ -1,0 +1,19 @@
+.Outer {
+    display: block;
+    outline: thick solid #390dd6;
+    background-color: rgba(245, 245, 245, 255);
+    width: 1300px;
+    height: 1360px;
+    margin-left: 10px;
+}
+
+.flex-Container {
+    display: flex;
+    flex-wrap: nowrap
+}
+
+.OuterBox {
+    display: block;
+    outline: thick solid #390dd6;
+
+}

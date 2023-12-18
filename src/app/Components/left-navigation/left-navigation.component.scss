@@ -1,0 +1,81 @@
+.Left {
+  margin-top: 180px;
+  display: flex;
+  flex-direction: column;
+  height: 1180px;
+  width: 220px;
+  position: fixed;
+}
+
+.photo {
+  background-image: url("../../assets/images/userPhoto.png");
+  height: 85px;
+  width: 90px;
+  background-size: cover;
+  background-color: rgba(245, 245, 245, 255);
+}
+
+
+.name {
+  font-weight: bold;
+  width: 120px;
+  padding: 50px 50px 50px 100px;
+}
+
+.Menu {
+  margin-top: 1px;
+  background-color: rgba(245, 245, 245, 255);
+}
+
+.MenuHeading {
+  color: grey;
+}
+
+.MenuItems {
+  margin-left: 9px;
+}
+
+.Overview {
+  background-color: white;
+}
+
+.items {
+  color: grey;
+}
+
+.General {
+  color: grey;
+  background-color: rgba(245, 245, 245, 255);
+  ;
+}
+
+.GeneralItems {
+  margin-left: 9px;
+  background-color: rgba(245, 245, 245, 255);
+  ;
+}
+
+.Payment {
+  background-image: url("../../assets/images/PaymentIcon.png");
+  background-color: rgba(245, 245, 245, 255);
+  ;
+  margin-left: 15px;
+  height: 40px;
+  width: 70px;
+  border-image-repeat: stretch;
+  background-repeat: no-repeat;
+  background-size: 53%;
+  display: block;
+
+}
+
+.NewPayment {
+  border-style: dotted;
+  border-color: lightblue;
+  background-color: rgba(245, 245, 245, 255);
+  ;
+  width: 85px;
+  height: 52px;
+  margin-left: 10px;
+
+}

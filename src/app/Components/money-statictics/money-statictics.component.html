@@ -1,0 +1,43 @@
+<div class="balanceDetails money padding-top-right-bottom-left border-bg-color default-margin ">
+  <div class="headings ">
+    <div class="heading1">
+      <h3>Total Balance</h3>
+    </div>
+    <div class="heading2">...</div>
+  </div>
+  <h2 class="padding top right bottom left">${{usersData[0].total_balance|number}}</h2>
+  <progress class="bar" id="file" value="42" max="100"> 42% </progress>
+  <div class="flex-Container">
+    <div class="payment padding top right bottom left">
+      Monthly Payment Limit</div>
+    <div class="paymentDone">${{usersData[0].payment_done_so_far|number}}/ </div>
+    <div class="paymentLimit">{{usersData[0].monthly_payment_limit|number}} </div>
+  </div>
+</div>
+<div class="moneyStatistics default-margin border-bg-color">
+
+  <div class="row1">
+
+    <h3 class="statistics-heading"> Money Statistics</h3>
+
+    <select name="monthly" class="monthly">
+      <option>Monthly</option>
+      <option>2</option>
+    </select>
+    <div class="dots">...</div>
+  </div>
+  <div class="row2 margin-top-left ">
+    <div class="totalIncome">Total Income<h1>{{usersData[1].total_income.value|number}}</h1>
+      +28% from last month</div>
+    <div class="totalExpense">Total Expense<h1>{{usersData[1].total_expense.value|number}}</h1>
+      +15% from last month </div>
+    <div class="totalInvestment">Total Investment<h1>{{usersData[1].total_investment.value|number}}</h1>
+      +65% from last month</div>
+  </div>
+</div>
+<div class="graph margin-top-left border-bg-color ">
+  <fusioncharts [width]="width" [height]="height" [type]="type" [dataFormat]="dataFormat" [dataSource]="dataSource">
+  </fusioncharts>
+
+</div>
+<app-transaction-history></app-transaction-history>

@@ -1,0 +1,42 @@
+<div class="OuterBox padding-top-right-bottom-left margin-top-left border-bg-color">
+    <table class="tbl">
+        <tr class="FirstRow">
+            <td class="Heading" colspan="4">
+                <h3>Transaction History</h3>
+            </td>
+            <td class="Search" colspan="3"> <button type="submit"><i class="fa fa-search btn-search"></i>
+                    Search</button>
+            </td>
+            <td class="Filter"> <button class="button"><i class='fas fa-filter'></i>Filter </button>
+            </td>
+            <td class="Export"> <button class="button"><i class='fas fa-file-export'></i>Export </button>
+            </td>
+        </tr>
+    </table>
+    <table>
+        <tr class="secondRow">
+            <td class="tbl-content">Date &#9662;</td>
+            <td class="name">Name &#9662;</td>
+            <td class="tbl-content">Status &#9662;</td>
+            <td class="tbl-content">Type &#9662;</td>
+            <td class="tbl-content">Time &#9662;</td>
+            <td class="tbl-content">Amount &#9662;</td>
+            <td class="tbl-content">Action &#9662; </td>
+        </tr>
+        <tr *ngFor="let users of array; let i=index">
+
+            <td>{{usersData[2][i].date.substring(0,10)}}</td>
+            <td>{{usersData[2][i].name}}</td>
+            <td>{{usersData[2][i].status}}</td>
+            <td>{{usersData[2][i].type}}</td>
+            <td>{{usersData[2][i].date.substring(12,16)}} am</td>
+            <td>{{usersData[2][i].amount|number}}</td>
+            <td><button class="dot" (click)="msg(usersData[2][i].name,usersData[2][i].type)" type="submit">...</button>
+            </td>
+
+        </tr>
+
+    </table>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</div>

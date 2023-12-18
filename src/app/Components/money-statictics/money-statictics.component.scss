@@ -1,0 +1,143 @@
+.balanceDetails {
+  display: block;
+  width: 690px;
+  height: 200px;
+  border-radius: 29px 29px 29px 29px;
+}
+
+progress::-webkit-progress-bar {
+  background-color: gray;
+}
+
+progress {
+  width: 490px;
+  height: 10px;
+  border: 0px solid gray;
+}
+
+progress::-webkit-progress-value {
+  background-color: black;
+}
+
+.flex-Container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.payment {
+  flex: 10 0 10%;
+  font-size: 20px;
+  padding: 20px;
+  color: gray;
+}
+
+.paymentDone {
+  flex: 0 0 10%;
+  padding: 20px 0px 20px 0px;
+  font-size: 20px;
+  color: black;
+  align-items: center;
+}
+
+
+.paymentLimit {
+  flex: 0 0 10%;
+  padding: 20px 20px 20px 0px;
+  font-size: 20px;
+  color: gray;
+  align-items: center;
+
+}
+
+.moneyStatistics {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 705px;
+  height: 200px;
+  border-radius: 30px 30px 30px 30px;
+  margin-top: 10px;
+}
+
+.row1 {
+  display: flex;
+  // flex: 16 0 0%;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.row2 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.graph {
+  background-color: white;
+  border-color: whitesmoke;
+  border-radius: 10px 30px 30px 30px;
+}
+
+.monthly {
+  flex: 0 0 10%;
+  padding: 0px 0px 0px 0px;
+  font-size: 15px;
+  font-weight: bold;
+  color: black;
+  align-items: center;
+  outline: thick solid #cddfcd;
+  width: 100px;
+  height: 25px;
+  margin-left: 420px;
+  margin-top: 12px
+}
+
+.dots {
+  flex: 15% 0 10%;
+  padding: 20px 20px 20px 20px;
+  font-size: 20px;
+  color: gray;
+  align-items: center;
+}
+
+.totalIncome {
+  padding: 0px 0px 10px 10px;
+
+}
+
+.totalExpense {
+  padding: 0px 0px 10px 70px;
+
+}
+
+.totalInvestment {
+  padding: 0px 0px 10px 70px;
+}
+
+.headings {
+  font-weight: bold;
+  display: flex;
+}
+
+.heading2 {
+  margin-left: 550px;
+  font-size: 18px;
+  color: grey;
+}
+
+.heading1 {
+  width: 110px !important;
+}
+
+.money {
+  margin-top: 180px;
+}
+
+.statistics-heading {
+  padding-left: 10px;
+}
+
+.bar {
+  width: 650px;
+}
